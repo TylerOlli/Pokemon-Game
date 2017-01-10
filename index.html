@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Pokemon Game</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/reset.css">
+
+		<!-- jQuery -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<!-- Game Logic -->
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+	</head>
+
+	<body>
+
+	<div class="container">
+			
+			<!-- Pokemon Game Jumbotron -->
+			<div class="jumbotron">
+				<div class="container">
+					<h1 class="text-center"><img src="assets/images/pokemonlogo.png" id="marble1" style="width:500px; height:200px;"></strong></h1>
+					<br>
+					<center><button type="button" class="btn btn-secondary" id="instructions" style="color:black;">Click Here For Instructions</button></center>
+				</div>
+			</div>
+					
+		<center>
+		
+		<div id="main-game-section">
+
+			<!-- Where the characters are initially available to be selected. -->
+			
+			<div id="characters-section">
+				<div class="section-title"><h2>Select Your Pokemon</h2></div>
+			</div>
+
+
+			
+			<!-- Section for our selected character. -->
+			<div class="section-title" id="selectpokemon">Select A Pokemon</div>
+			<div id="selected-character-section" style="margin-top: 10px">
+				<div class="section-title" id="yourpokemon" style="display:none;"">Your Pokemon</div>
+				<!-- Where our selected character will appear. -->
+				<div id="selected-character" style="display:none;"></div>
+			</div>
+
+				</div>
+			<!-- Where our enemies available to attack will appear. -->
+			<div id="available-to-attack-section" style="display:none;">
+				<div class="section-title">Pokemon Available To Attack</div>
+			</div>
+
+			<div class="section-title" id="fight-section1" style="display:none;">Fight Section</div>
+			<div id="fight-section" style="display:none;">
+				<button id="attack-button">Attack</button>
+			</div>
+
+			<div id="action" style="display:none;">
+				<div class="character-section">
+					<div class="section-title">Defender</div>
+					<!-- Where our defender will appear. -->
+					<div id="defender"></div>
+					</center>
+					<!-- Area for game messages. -->
+					<center><div id="gameMessage" style="font-size: 120%"></div></center
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
