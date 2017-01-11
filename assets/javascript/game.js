@@ -7,6 +7,22 @@ $( "#instructions" ).click(function() {
   alert( "Instructions: Select your Pokemon, then select which opponent you would like to battle. Click the attack button to damage your defender, then they will counter-attack back. Fight until one of you loses all of your health, if you win you will move on to the next opponent.");
 });
 
+
+//some nouse over animations
+$("#clear").mouseover(function() {
+$(this).addClass('ShakeAnimation btn-danger');
+});
+$("#clear").mouseout(function() {
+$(this).removeClass('ShakeAnimation btn-danger');
+});
+            
+$("#instructions").mouseover(function() {
+$(this).addClass('ShakeAnimation');
+});
+$("#instructions").mouseout(function() {
+$(this).removeClass('ShakeAnimation');
+});
+
   // VARIABLE DECLARATION
   // ===================================================================
 
